@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #EEEEEE;
+}
+body{
+    background-color: #222831;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+}
+i{
+    color: #393E46;
+    font-size: 16px;
+}
+nav{
+    display: flex;
+    padding: 1rem 1.5rem;
+    background-color: #393E46;
+    justify-content: space-between;
+}
+nav p{
+    font-family: 'Marcellus', serif;
+    text-decoration: none;
+    font-size: 35px;
+}
+nav .right{
+    display: flex;
+    gap: 2.5rem;
+}
+nav .form{
+    display: flex;
+    gap: 0.3rem;
+}
+.btn{
+    padding: .2rem;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input{
+    padding: 0.3rem;
+    font-size: 16px;
+    color: #000;
+}
+#btn{
+    background-color: #EEEEEE;
+    padding: 0.3rem;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 1rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #393E46;
+    padding: 1rem 0 0;
+    border-radius: 1rem;
+    margin: 1rem 0;
+
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 16px;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+.card div img{
+    width: 70%;
+}
+.hide button{
+    background-color: #3030307c;
+    width: -webkit-fill-available;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    align-self: flex-end;
+    margin: 0;
+    cursor: pointer;
+}
+
+.alert{
+    position: absolute;
+    top: 4.8rem;
+    left: 46vw;
+    margin: auto;
+    background-color: #EEEEEE;
+    color: green;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 20px #00000071;
+}
+.alert i{
+    color: green;
+}
+
+@media (max-width:476px) {
+    nav{
+        padding:1rem .5rem ;
+    }
+    nav p{
+        font-size: 22px;
+    
+    }
+    nav .right{
+        gap:0.5rem;
+    }
+    nav .form{
+        width: 50%;
+        object-fit: contain;
+    }
+    nav .btn{
+        font-size: 14px;
+    }
+    .form input{
+        width: 6rem;
+    }
+    img{
+        width: 50%;
+    }
+    .alert{
+        left: 36vw;
+    }
+}
